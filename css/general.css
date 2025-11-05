@@ -1,0 +1,92 @@
+:root{
+    --primary-gray: rgb(90, 88, 88);
+    --secondary-gray: #333;
+    --primary-white: rgb(248, 248, 248);
+}
+
+
+body {
+  background-color: var(--primary-gray);
+  color: var(--primary-white);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  
+}
+
+html, body{
+  height: 100%;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content{
+  flex: 1;
+}
+
+.gallery img {
+  display: flex;
+  max-width: 100%;
+}
+
+.hero-img img {
+  display: flex;
+  max-width: 100%;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: end;
+  font-size: 70%;
+}
+
+.info {
+  margin: 2rem;
+}
+
+.info-text {
+  margin: 2rem;
+}
+
+.text {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+figure {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+picture {
+  transition: transform 0.5s;
+}
+
+picture:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  position: static;
+ 
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  
+
+
+  text-align: center;
+  padding: 3px;
+  background-color: var(--secondary-gray);
+  color: var(--primary-white);
+}
+
+footer img {
+  max-width: 20px;
+}
